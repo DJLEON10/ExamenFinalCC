@@ -1,0 +1,50 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Security Groups - Stack 1
+
+Resources:
+  SGec2Daniel-Leon:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupName: sg-ec2-Daniel-Leon
+      GroupDescription: Security Group para EC2 publica
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: Name
+          Value: sg-ec2-Daniel-Leon
+
+  SGalbDaniel-Leon:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupName: sg-alb-Daniel-Leon
+      GroupDescription: Security Group para ALB
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: Name
+          Value: sg-alb-Daniel-Leon
+
+Outputs:
+  SGec2Id:
+    Value: !Ref SGec2Daniel-Leon
+    Export:
+      Name: SGec2Id-Daniel-Leon
+
+  SGalbId:
+    Value: !Ref SGalbDaniel-Leon
+    Export:
+      Name: SGalbId-Daniel-Leon

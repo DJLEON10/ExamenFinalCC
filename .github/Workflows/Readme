@@ -1,1 +1,52 @@
-joseph gaeyyyyyy
+DANIEL
+Deploy / alb / auto
+
+JOSEPH
+Destroy / ec2 / security
+
+
+
+creas rama => feature/daniel_deploy
+git status
+git add ruta_nombre_archivo
+git status debe aparecer en verde el archivo
+git commit -m "cargadno deploy"
+git push origin feature/daniel_deploy
+
+creas rama => feature/daniel_deploy
+git status
+git add ruta_nombre_archivo
+git status debe aparecer en verde el archivo
+git commit -m "cargadno deploy"
+git push origin feature/daniel_deploy
+
+creas rama => feature/daniel_deploy
+git status
+git add ruta_nombre_archivo
+git status debe aparecer en verde el archivo
+git commit -m "cargadno deploy"
+git push origin feature/daniel_deploy
+
+creas rama => feature/daniel_deploy
+git status
+git add ruta_nombre_archivo
+git status debe aparecer en verde el archivo
+git commit -m "cargadno deploy"
+git push origin feature/daniel_deploy
+
+creas rama => feature/daniel_deploy
+git status
+git add ruta_nombre_archivo
+git status debe aparecer en verde el archivo
+git commit -m "cargadno deploy"
+git push origin feature/daniel_deploy
+
+creas rama => feature/daniel_deploy
+git status
+git add ruta_nombre_archivo
+git status debe aparecer en verde el archivo
+git commit -m "cargadno deploy"
+git push origin feature/daniel_deploy
+
+en git te vas para pull request y hace 6 pr de cada feature a develop
+de develop hace uno solo a master y ya
